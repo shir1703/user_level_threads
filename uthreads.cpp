@@ -77,8 +77,6 @@ int uthread_get_quantums(int);
 
 void signal_handler(Action);
 
-// void init_block_set(sigset_t *set);
-
 void handle_running_thread_termination(int tid, T cur_thread);
 
 void handle_non_running_thread_termination(int tid, T cur_thread);
@@ -196,7 +194,6 @@ public:
  * Switching between threads.
  */
 void switch_threads(int switch_case) {
-
     signal_handler(BLOCK);
     sleeping_list_handler();
 
@@ -227,7 +224,6 @@ void switch_threads(int switch_case) {
             }
         }
     }
-
 
     //Gets the next ready thread from the ready queue.
     int new_thread_id = get_next_ready_thread();
