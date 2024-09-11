@@ -32,8 +32,6 @@
 
 #define TERMINATE 3
 #define N_TERMINATE 4
-// #define BLOCK 5
-// #define UNBLOCK 6
 #define TIMER_SIGNAL 26
 
 // ----- DECLARATIONS --------
